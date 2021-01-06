@@ -1,0 +1,36 @@
+/* COLOR PALETTE
+
+Purple:  #ac9dca
+Beige: #F0EED6
+Silver: #f3e6e3
+Gray/Blue: #dbe3e5
+Tan: #d3c09a
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ac9dca;
+  color: rgb(247, 247, 247);
+}
+
+h1 {
+  margin: 30px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+.content {
+  text-align: center;
+}
+
+.row {
+  display: block;
+  margin: 20px 0;
+}

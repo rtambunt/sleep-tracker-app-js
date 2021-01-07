@@ -1,10 +1,14 @@
 /* COLOR PALETTE
 
-Purple:  #ac9dca
+Purple background:  #baa7df
+Button background: #a4b9ee
+Button hover background: #b2c7fc
+
 Beige: #F0EED6
 Silver: #f3e6e3
 Gray/Blue: #dbe3e5
 Tan: #d3c09a
+Light Blue: #b2c2ec
 */
 
 /* ----------------------- */
@@ -18,9 +22,10 @@ Tan: #d3c09a
 }
 
 body {
-  background-color: #ac9dca;
+  background-color: #baa7df;
   color: rgb(247, 247, 247);
   font-family: 'Noto Sans JP', Arial, Helvetica, sans-serif;
+  font-size: 17px;
   font-weight: 300;
   text-rendering: optimizeLegibility;
 }
@@ -51,14 +56,46 @@ p {
 h1 {
   margin: 30px;
   text-align: center;
+  font-size: 200%;
 }
 
 h2 {
   margin-top: 30px;
   text-align: center;
+  font-size: 150%;
 }
 
 /* --- Buttons --- */
+
+input[type='button'] {
+  font-size: 85%;
+  padding: 10px 35px;
+  color: rgb(248, 248, 248);
+  background-color: #a4b9ee;
+  border: 1px solid #a4b9ee;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+  -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+  -moz-transition: background-color 0.2s, border 0.2s, color 0.2s;
+  -ms-transition: background-color 0.2s, border 0.2s, color 0.2s;
+  -o-transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+input[type='button']:hover,
+input[type='button']:active {
+  color: #f8f8f8;
+  background-color: #b2c7fc;
+  border: 1px solid #b2c7fc;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
 
 /* --- Grid --- */
 
@@ -96,8 +133,4 @@ h2 {
 .input {
   width: 30%;
   margin: auto;
-}
-
-.btn-add {
-  text-align: center;
 }

@@ -4,26 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sleep Tracker</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="content">
       <div class="row">
         <h1>Sleep Tracker</h1>
-        <label for="set-bedtime">Set Bedtime</label>
-        <input type="text" name="set-bedtime" class="bedtime" />
-        <label for="am-pm"></label>
-        <select name="am-pm" id="am-pm">
-          <option value="am">AM</option>
-          <option value="pm" selected="selected">PM</option>
-        </select>
+      </div>
+      <div class="input">
+        <div class="row clearfix">
+          <div class="col span-1-of-2">
+            <label for="set-bedtime">Set Bedtime</label>
+          </div>
+          <div class="col span-1-of-2">
+            <input type="text" name="set-bedtime" class="bedtime" />
+            <label for="am-pm"></label>
+            <select name="am-pm" id="am-pm">
+              <option value="am">AM</option>
+              <option value="pm" selected="selected">PM</option>
+            </select>
+          </div>
+        </div>
+        <div class="row clearfix">
+          <div class="col span-1-of-2">
+            <label for="set-length">Set Length</label>
+          </div>
+          <div class="col span-1-of-2">
+            <input type="text" name="set-length" class="length" />
+          </div>
+        </div>
+        <div class="row clearfix">
+          <div class="col span-1-of-2">
+            <label for="btn-add"></label>
+          </div>
+          <div class="col span-1-of-2">
+            <input type="button" class="btn btn-add" id="btn-add" value="Add" />
+          </div>
+        </div>
       </div>
       <div class="row">
-        <label for="set-length">Set Length</label>
-        <input type="text" name="set-length" class="length" />
+        <h2><u>Your sleep goal</u></h2>
       </div>
-      <button class="btn-add">Add</button>
-      <h2><u>Your sleep goal</u></h2>
       <p class="goal-display"></p>
     </div>
     <script src="main.js"></script>

@@ -31,5 +31,5 @@ btnAdd.addEventListener('click', function () {
   //   const wakeUpTime =
   //     bedtime + sleepLength > 12 ? bedtime + sleepLength - 12 : bedtime + sleepLength;
 
-  goalDisplay.textContent = `Your sleep goal is to sleep at ${bedtime}${ampmValueStart} and wake up at ${wakeUpTime}${ampmValue} for a total of ${sleepLength} hrs rest!`;
+  goalDisplay.textContent = `Your goal is to sleep at ${bedtime}${ampmValueStart} and wake up at ${wakeUpTime}${ampmValue} for a total of ${sleepLength} hrs rest tonight!`;
 });

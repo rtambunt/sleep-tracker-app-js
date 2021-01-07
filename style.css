@@ -7,6 +7,10 @@ Gray/Blue: #dbe3e5
 Tan: #d3c09a
 */
 
+/* ----------------------- */
+/* Basic Setup */
+/* ----------------------- */
+
 * {
   margin: 0;
   padding: 0;
@@ -16,25 +20,84 @@ Tan: #d3c09a
 body {
   background-color: #ac9dca;
   color: rgb(247, 247, 247);
+  font-family: 'Noto Sans JP', Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
 }
 
-h1 {
-  margin: 30px;
+.clearfix {
+  zoom: 1;
+}
+.clearfix::after {
+  content: '';
+  clear: both;
+  display: block;
 }
 
-h2 {
-  margin-top: 30px;
-}
+/* ----------------------- */
+/* Reusable Components */
+/* ----------------------- */
 
 label {
   margin-right: 10px;
 }
 
-.content {
+p {
   text-align: center;
 }
 
+/* --- Headings --- */
+
+h1 {
+  margin: 30px;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* --- Buttons --- */
+
+/* --- Grid --- */
+
 .row {
   display: block;
-  margin: 20px 0;
+  margin: 20px auto;
+  max-width: 1140px;
+}
+
+.col {
+  display: block;
+  float: left;
+}
+
+/* .span-1-of-3 {
+  width: 32.26%;
+}
+
+.span-2-of-3 {
+  width: 66.13%;
+} */
+
+.span-1-of-2 {
+  width: 49%;
+}
+
+/* ----------------------- */
+/* Misc */
+/* ----------------------- */
+
+.goal-display {
+  margin-top: 30px;
+}
+
+.input {
+  width: 30%;
+  margin: auto;
+}
+
+.btn-add {
+  text-align: center;
 }

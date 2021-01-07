@@ -4,16 +4,15 @@ Purple background:  #baa7df
 Button background: #a4b9ee
 Button hover background: #b2c7fc
 
-Beige: #F0EED6
-Silver: #f3e6e3
-Gray/Blue: #dbe3e5
-Tan: #d3c09a
-Light Blue: #b2c2ec
+Yellow: #FFE1A3 
+Orange: #FFB495 
+Pink: #D662A8
+Dark Purples: #6A2D8A #412A78 #0E0D5A
 */
 
-/* ----------------------- */
+/* -------------------------------------- */
 /* Basic Setup */
-/* ----------------------- */
+/* -------------------------------------- */
 
 * {
   margin: 0;
@@ -39,9 +38,26 @@ body {
   display: block;
 }
 
-/* ----------------------- */
+/* -------------------------------------- */
+/* Containers */
+/* -------------------------------------- */
+
+.content {
+  border-radius: 50px;
+  height: 70vh;
+  margin: auto;
+  width: 50%;
+  background-color: #dcd2f1;
+}
+
+.input-container {
+  width: 30%;
+  margin: auto;
+}
+
+/* -------------------------------------- */
 /* Reusable Components */
-/* ----------------------- */
+/* -------------------------------------- */
 
 label {
   margin-right: 10px;
@@ -54,7 +70,7 @@ p {
 /* --- Headings --- */
 
 h1 {
-  margin: 30px;
+  margin-bottom: 30px;
   text-align: center;
   font-size: 200%;
 }
@@ -65,7 +81,7 @@ h2 {
   font-size: 150%;
 }
 
-/* --- Buttons --- */
+/* --- Inputs --- */
 
 input[type='button'] {
   font-size: 85%;
@@ -97,6 +113,14 @@ input[type='button']:active {
   -o-border-radius: 50px;
 }
 
+input[type='text'] {
+  padding: 2px;
+}
+
+*:focus {
+  outline: none;
+}
+
 /* --- Grid --- */
 
 .row {
@@ -110,27 +134,14 @@ input[type='button']:active {
   float: left;
 }
 
-/* .span-1-of-3 {
-  width: 32.26%;
-}
-
-.span-2-of-3 {
-  width: 66.13%;
-} */
-
 .span-1-of-2 {
   width: 49%;
 }
 
-/* ----------------------- */
+/* -------------------------------------- */
 /* Misc */
-/* ----------------------- */
+/* -------------------------------------- */
 
 .goal-display {
   margin-top: 30px;
-}
-
-.input {
-  width: 30%;
-  margin: auto;
 }

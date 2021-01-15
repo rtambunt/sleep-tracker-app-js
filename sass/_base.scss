@@ -1,6 +1,6 @@
 /* COLOR PALETTE
 
-Purple background:  #baa7df
+Purple background:  #baa7df 
 Button background: #a4b9ee
 Button hover background: #b2c7fc
 Darker Purple: rgb(151 117 213)
@@ -17,6 +17,7 @@ Dark Purples: #6A2D8A #412A78 #0E0D5A
 
 :root {
   --color-primary: #baa7df;
+  --color-primary-light: #dcd2f1;
 }
 
 * {
@@ -27,8 +28,10 @@ Dark Purples: #6A2D8A #412A78 #0E0D5A
 
 html,
 body {
-  background-color: var(--color-primary);
-  background-image: url(test.png);
+  background-image: linear-gradient(
+    var(--color-primary-light),
+    var(--color-primary)
+  );
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;

@@ -112,16 +112,16 @@ input[type='text'] {
 /* -------------------------------------- */
 /* Containers */
 /* -------------------------------------- */
-.content {
+.container {
+  max-width: 124rem;
+  margin: 8rem auto;
+  padding-bottom: 1.5rem;
+  background-color: whitesmoke;
   border-radius: 50px;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
-  -o-border-radius: 50px;
-  height: 70vh;
-  margin: auto;
-  width: 50%;
-  background-color: whitesmoke; }
+  -o-border-radius: 50px; }
 
 .input-container {
   width: 30%;

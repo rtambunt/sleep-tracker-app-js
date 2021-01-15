@@ -18,15 +18,25 @@ Dark Purples: #6A2D8A #412A78 #0E0D5A
 :root {
   --color-primary: #baa7df;
   --color-primary-light: #dcd2f1;
+  --color-grey-dark: rgb(51, 51, 51);
 }
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
-html,
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
 body {
   background-image: linear-gradient(
     var(--color-primary-light),
@@ -35,9 +45,9 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  color: rgb(247, 247, 247);
+  color: var(--color-grey-dark);
   font-family: 'Noto Sans JP', Arial, Helvetica, sans-serif;
-  font-size: 17px;
+  font-size: 1.7rem;
   font-weight: 300;
   text-rendering: optimizeLegibility;
 }
@@ -54,13 +64,13 @@ body {
 /* --- Headings --- */
 
 h1 {
-  margin-bottom: 30px;
+  margin-bottom: 3rem;
   text-align: center;
   font-size: 200%;
 }
 
 h2 {
-  margin-top: 30px;
+  margin-top: 3rem;
   text-align: center;
   font-size: 150%;
 }

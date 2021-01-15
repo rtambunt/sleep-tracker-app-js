@@ -15,22 +15,30 @@ Dark Purples: #6A2D8A #412A78 #0E0D5A
 /* -------------------------------------- */
 :root {
   --color-primary: #baa7df;
-  --color-primary-light: #dcd2f1; }
+  --color-primary-light: #dcd2f1;
+  --color-grey-dark: rgb(51, 51, 51); }
 
 * {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
+  padding: 0; }
 
-html,
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
 body {
   background-image: linear-gradient(var(--color-primary-light), var(--color-primary));
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  color: #f7f7f7;
+  color: var(--color-grey-dark);
   font-family: 'Noto Sans JP', Arial, Helvetica, sans-serif;
-  font-size: 17px;
+  font-size: 1.7rem;
   font-weight: 300;
   text-rendering: optimizeLegibility; }
 
@@ -44,12 +52,12 @@ body {
 
 /* --- Headings --- */
 h1 {
-  margin-bottom: 30px;
+  margin-bottom: 3rem;
   text-align: center;
   font-size: 200%; }
 
 h2 {
-  margin-top: 30px;
+  margin-top: 3rem;
   text-align: center;
   font-size: 150%; }
 
@@ -106,10 +114,14 @@ input[type='text'] {
 /* -------------------------------------- */
 .content {
   border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
   height: 70vh;
   margin: auto;
   width: 50%;
-  background-color: #fff; }
+  background-color: whitesmoke; }
 
 .input-container {
   width: 30%;
@@ -118,7 +130,7 @@ input[type='text'] {
 /* --- Grid --- */
 .row {
   display: block;
-  margin: 20px auto;
+  margin: 2rem auto;
   max-width: 1140px; }
 
 .col {

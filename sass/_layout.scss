@@ -1,0 +1,33 @@
+/* -------------------------------------- */
+/* Containers */
+/* -------------------------------------- */
+
+.content {
+  border-radius: 50px;
+  height: 70vh;
+  margin: auto;
+  width: 50%;
+  background-color: #dcd2f1;
+}
+
+.input-container {
+  width: 30%;
+  margin: auto;
+}
+
+/* --- Grid --- */
+
+.row {
+  display: block;
+  margin: 20px auto;
+  max-width: 1140px;
+}
+
+.col {
+  display: block;
+  float: left;
+}
+
+.span-1-of-2 {
+  width: 49%;
+}

@@ -1,0 +1,27 @@
+{
+  "name": "sheepy",
+  "version": "1.0.0",
+  "description": "Web application that displays your bedtime and sleep length goals",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel watch:sass devserver "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rtambunt/sleep-tracker-app-js.git"
+  },
+  "author": "Robbie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rtambunt/sleep-tracker-app-js/issues"
+  },
+  "homepage": "https://github.com/rtambunt/sleep-tracker-app-js#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}

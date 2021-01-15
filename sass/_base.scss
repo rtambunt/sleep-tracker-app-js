@@ -1,0 +1,63 @@
+/* COLOR PALETTE
+
+Purple background:  #baa7df
+Button background: #a4b9ee
+Button hover background: #b2c7fc
+Darker Purple: rgb(151 117 213)
+
+Yellow: #FFE1A3 
+Orange: #FFB495 
+Pink: #D662A8
+Dark Purples: #6A2D8A #412A78 #0E0D5A
+*/
+
+/* -------------------------------------- */
+/* Basic Setup */
+/* -------------------------------------- */
+
+:root {
+  --color-primary: #baa7df;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: var(--color-primary);
+  background-image: url(test.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: rgb(247, 247, 247);
+  font-family: 'Noto Sans JP', Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+}
+
+.clearfix {
+  zoom: 1;
+}
+.clearfix::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+/* --- Headings --- */
+
+h1 {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 200%;
+}
+
+h2 {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 150%;
+}

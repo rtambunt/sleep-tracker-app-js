@@ -3,90 +3,70 @@
 Purple background:  #baa7df
 Button background: #a4b9ee
 Button hover background: #b2c7fc
+Darker Purple: rgb(151 117 213)
 
 Yellow: #FFE1A3 
 Orange: #FFB495 
 Pink: #D662A8
 Dark Purples: #6A2D8A #412A78 #0E0D5A
 */
-
 /* -------------------------------------- */
 /* Basic Setup */
 /* -------------------------------------- */
+:root {
+  --color-primary: #baa7df; }
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
+html,
 body {
-  background-color: #baa7df;
-  color: rgb(247, 247, 247);
+  background-color: var(--color-primary);
+  background-image: url(test.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #f7f7f7;
   font-family: 'Noto Sans JP', Arial, Helvetica, sans-serif;
   font-size: 17px;
   font-weight: 300;
-  text-rendering: optimizeLegibility;
-}
+  text-rendering: optimizeLegibility; }
 
 .clearfix {
-  zoom: 1;
-}
+  zoom: 1; }
+
 .clearfix::after {
   content: '';
   clear: both;
-  display: block;
-}
-
-/* -------------------------------------- */
-/* Containers */
-/* -------------------------------------- */
-
-.content {
-  border-radius: 50px;
-  height: 70vh;
-  margin: auto;
-  width: 50%;
-  background-color: #dcd2f1;
-}
-
-.input-container {
-  width: 30%;
-  margin: auto;
-}
-
-/* -------------------------------------- */
-/* Reusable Components */
-/* -------------------------------------- */
-
-label {
-  margin-right: 10px;
-}
-
-p {
-  text-align: center;
-}
+  display: block; }
 
 /* --- Headings --- */
-
 h1 {
   margin-bottom: 30px;
   text-align: center;
-  font-size: 200%;
-}
+  font-size: 200%; }
 
 h2 {
   margin-top: 30px;
   text-align: center;
-  font-size: 150%;
-}
+  font-size: 150%; }
+
+/* -------------------------------------- */
+/* Reusable Components */
+/* -------------------------------------- */
+label {
+  margin-right: 10px; }
+
+p {
+  text-align: center; }
 
 /* --- Inputs --- */
-
 input[type='button'] {
   font-size: 85%;
   padding: 10px 35px;
-  color: rgb(248, 248, 248);
+  color: #f8f8f8;
   background-color: #a4b9ee;
   border: 1px solid #a4b9ee;
   border-radius: 50px;
@@ -98,8 +78,7 @@ input[type='button'] {
   -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
   -moz-transition: background-color 0.2s, border 0.2s, color 0.2s;
   -ms-transition: background-color 0.2s, border 0.2s, color 0.2s;
-  -o-transition: background-color 0.2s, border 0.2s, color 0.2s;
-}
+  -o-transition: background-color 0.2s, border 0.2s, color 0.2s; }
 
 input[type='button']:hover,
 input[type='button']:active {
@@ -110,38 +89,41 @@ input[type='button']:active {
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
-  -o-border-radius: 50px;
-}
+  -o-border-radius: 50px; }
 
 input[type='text'] {
-  padding: 2px;
-}
+  padding: 2px; }
 
 *:focus {
-  outline: none;
-}
+  outline: none; }
+
+/* Goal */
+.goal-display {
+  margin-top: 30px; }
+
+/* -------------------------------------- */
+/* Containers */
+/* -------------------------------------- */
+.content {
+  border-radius: 50px;
+  height: 70vh;
+  margin: auto;
+  width: 50%;
+  background-color: #dcd2f1; }
+
+.input-container {
+  width: 30%;
+  margin: auto; }
 
 /* --- Grid --- */
-
 .row {
   display: block;
   margin: 20px auto;
-  max-width: 1140px;
-}
+  max-width: 1140px; }
 
 .col {
   display: block;
-  float: left;
-}
+  float: left; }
 
 .span-1-of-2 {
-  width: 49%;
-}
-
-/* -------------------------------------- */
-/* Misc */
-/* -------------------------------------- */
-
-.goal-display {
-  margin-top: 30px;
-}
+  width: 49%; }
